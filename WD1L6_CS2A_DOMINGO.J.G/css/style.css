@@ -1,0 +1,60 @@
+/* style.css - black and lavender, simple */
+
+/* Page */
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #faf8ff;
+  color: #222222;
+}
+h1, h2, h3, .navbar-brand { font-family: Georgia, serif; }
+
+/* Sections */
+.section { padding: 80px 0; }
+.bg-lavender { background-color: #ece6fa; }
+.bg-purple { background-color: #8b6cf6; }
+
+/* Purple button */
+.btn-purple { background-color: #8b6cf6; color: #ffffff; border: none; }
+.btn-purple:hover { background-color: #7452e8; color: #ffffff; }
+
+/* Hero: two soft circles behind the text */
+.hero { position: relative; overflow: hidden; }
+.hero .container { position: relative; z-index: 1; }
+.hero-circle {
+  position: absolute; width: 380px; height: 380px; border-radius: 50%;
+  background-color: #8b6cf6; opacity: 0.4; right: -100px; top: 120px;
+}
+.hero-circle-small {
+  position: absolute; width: 140px; height: 140px; border-radius: 50%;
+  background-color: #ffd9c7; opacity: 0.6; right: 220px; bottom: 80px;
+}
+.hero-name { font-size: 5rem; font-weight: bold; }
+
+/* About */
+.profile-photo { width: 100%; border-radius: 20px; box-shadow: 12px 12px 0 #8b6cf6; }
+.motto {
+  font-family: Georgia, serif; font-style: italic; font-size: 2rem;
+  border-left: 5px solid #8b6cf6; padding-left: 20px;
+}
+.skill {
+  display: inline-block; background-color: #ece6fa; padding: 4px 14px;
+  border-radius: 20px; margin: 0 6px 6px 0; font-size: 14px;
+}
+
+/* Philosophy */
+.principle h3 { color: #b8a6ff; border-top: 3px solid #b8a6ff; padding-top: 12px; font-size: 1.3rem; }
+
+/* Project cards */
+.project-card { transition: transform 0.2s; }
+.project-card:hover { transform: translateY(-5px); }
+.project-card img { cursor: pointer; }
+
+/* Phones */
+@media (max-width: 767px) {
+  .hero-name { font-size: 3rem; }
+  .hero-circle { width: 250px; height: 250px; right: -100px; }
+  .hero-circle-small { display: none; }
+  .motto { font-size: 1.5rem; }
+  .section { padding: 60px 0; }
+}
